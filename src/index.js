@@ -1,11 +1,8 @@
 import React from 'react' 
 import ReactDOM from 'react-dom'
 
-import { ThemeProvider } from '@material-ui/core'
 
 import App from './App.js'
-
-import theme from './theme.js'
 
 class Main extends React.Component {
     constructor(props) {
@@ -17,9 +14,7 @@ class Main extends React.Component {
 
     render() {
         return (
-            <ThemeProvider theme={theme} >
-                <App />
-            </ThemeProvider>
+            <App />
         );
     }
 }
