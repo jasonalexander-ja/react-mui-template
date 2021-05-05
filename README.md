@@ -2,4 +2,4 @@
 
 Install the relevant dependecies, run:
 
-`npm run`
+`npm install`
