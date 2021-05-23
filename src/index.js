@@ -1,22 +1,20 @@
-import React from 'react' 
-import ReactDOM from 'react-dom'
+import React from 'react'; 
+import ReactDOM from 'react-dom';
 
+import {
+    ThemeProvider
+} from '@material-ui/core';
 
-import App from './App.js'
+import App from './App';
+import theme from './Theme';
 
-class Main extends React.Component {
-    constructor(props) {
-        super(props)
-        this.state = {
+const Main = () =>  {
 
-        }
-    }
-
-    render() {
-        return (
+    return (
+        <ThemeProvider theme={theme}>
             <App />
-        );
-    }
+        </ThemeProvider>
+    );
 }
 
 ReactDOM.render(

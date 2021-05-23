@@ -1,10 +1,29 @@
-import React from 'react'
+import React from 'react';
+
+import { 
+    Paper,
+    makeStyles,
+    Typography, 
+} from '@material-ui/core';
+
+const useStyles = makeStyles(theme => ({
+    background: {
+        color: "white"
+    }
+}));
 
 export default function App(props) {
+    const classes = useStyles();
 
     return (
-        <div>
-            <h1> Material UI </h1>
-        </div>
+        <Paper
+            square={true}
+            className={classes.background}
+            style={{
+                height: "100vh"
+            }}
+        >
+            <Typography variant="h1">Hello World</Typography>
+        </Paper>
     );
 }
